@@ -83,7 +83,7 @@
     pale_blue    = ["#AFCBE3", 110, "blue"]
     red          = ["#B37576", 131, "darkred"]
     light_red    = ["#D99898", 131, "darkred"]
-    orange       = ["#ffaf87", 216, "red"]
+    orange       = ["#CFA488", 216, "red"]
     ocre         = ["#B9AC72", 102, "darkyellow"]
     yellow       = ["#D3C899", 229, "yellow"]
     hiviz_yellow = ["#FFD700", 220, "yellow"]
@@ -220,12 +220,14 @@
         [ "TSOperator", "NONE", pale_gold, "NONE" ],
         [ "TSKeywordOperator",  "TSKeyword" ],
         [ "TSKeywordFunction",  "TSKeyword" ],
-        [ "@variable", "TSVariable"],
+          ##
+        [ "@variable", "TSVariable" ],
           ###
         [ "@lsp.type.enumMember", "NONE", pale_blue, "NONE" ],
         [ "@lsp.type.namespace", "TSNamespace"],
         [ "@lsp.type.operator", "TSOperator" ],
-        [ "@lsp.type.variable", "TSVariable"],
+        [ "@lsp.type.variable", "TSVariable" ],
+        [ "@lsp.type.property", "TSProperty" ],
           ###
         [ "rustFoldBraces", "NONE", hiviz_yellow, "NONE" ],
         [ "rustOperator", "NONE", pale_gold, "NONE" ],

@@ -1,8 +1,8 @@
 " palefire_stealth.vim -- Vim color scheme.
 " Author:      Michal Sarpt0 ()
-" Webpage:     https://github.com/sarpt/pale-fire-stealth
+" Webpage:     https://github.com/sarpt/pale-fire-stealth-nvim
 " Description: Adaptation of pale-fire stealth variant in neovim based on the original pale-fire adaptation by Nequo
-" Last Change: 2025-10-13
+" Last Change: 2025-10-18
 
 hi clear
 if exists("syntax_on")
@@ -79,11 +79,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellBad ctermbg=NONE ctermfg=131 cterm=undercurl guibg=NONE guifg=#B37576 gui=undercurl guisp=#B37576
     hi SpellCap ctermbg=NONE ctermfg=73 cterm=undercurl guibg=NONE guifg=#89C7CB gui=undercurl guisp=#89C7CB
     hi SpellLocal ctermbg=NONE ctermfg=65 cterm=undercurl guibg=NONE guifg=#8DB98D gui=undercurl guisp=#8DB98D
-    hi SpellRare ctermbg=NONE ctermfg=216 cterm=undercurl guibg=NONE guifg=#ffaf87 gui=undercurl guisp=#ffaf87
+    hi SpellRare ctermbg=NONE ctermfg=216 cterm=undercurl guibg=NONE guifg=#CFA488 gui=undercurl guisp=#CFA488
     hi ColorColumn ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1E1E1E guifg=NONE gui=NONE
     hi TSPunctBracket ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
-    hi TSField ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#ffaf87 gui=NONE
+    hi TSField ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#CFA488 gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=108 cterm=NONE guibg=NONE guifg=#9FCC9F gui=NONE
     hi TSNamespace ctermbg=NONE ctermfg=108 cterm=NONE guibg=NONE guifg=#B1DEB1 gui=NONE
     hi TSConstructor ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#70AEB1 gui=NONE
@@ -95,13 +95,13 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi rustOperator ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi NvimTreeRootFolder ctermbg=NONE ctermfg=65 cterm=NONE guibg=NONE guifg=#8DB98D gui=NONE
     hi NvimTreeFolderName ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#70AEB1 gui=NONE
-    hi NvimTreeOpenedFolderName ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#ffaf87 gui=NONE
+    hi NvimTreeOpenedFolderName ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#CFA488 gui=NONE
     hi NvimTreeExecFile ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi NvimTreeGitDirty ctermbg=NONE ctermfg=131 cterm=NONE guibg=NONE guifg=#B37576 gui=NONE
     hi NvimTreeGitDeleted ctermbg=NONE ctermfg=131 cterm=NONE guibg=NONE guifg=#B37576 gui=NONE
     hi NvimTreeGitNew ctermbg=NONE ctermfg=229 cterm=NONE guibg=NONE guifg=#D3C899 gui=NONE
     hi NvimTreeGitStaged ctermbg=NONE ctermfg=65 cterm=NONE guibg=NONE guifg=#8DB98D gui=NONE
-    hi NvimTreeGitRenamed ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#ffaf87 gui=NONE
+    hi NvimTreeGitRenamed ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#CFA488 gui=NONE
     hi DiffviewFilePanelPath ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#70AEB1 gui=NONE
     hi DiagnosticSignError ctermbg=NONE ctermfg=131 cterm=NONE guibg=NONE guifg=#B37576 gui=NONE
     hi DiagnosticSignWarning ctermbg=NONE ctermfg=229 cterm=NONE guibg=NONE guifg=#D3C899 gui=NONE
@@ -117,9 +117,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TroubleFoldIcon ctermbg=NONE ctermfg=102 cterm=NONE guibg=NONE guifg=#B9AC72 gui=NONE
     hi TroubleFile ctermbg=NONE ctermfg=229 cterm=NONE guibg=NONE guifg=#D3C899 gui=NONE
     hi TelescopeSelection ctermbg=236 ctermfg=250 cterm=NONE guibg=#262626 guifg=#E0E0C9 gui=NONE
-    hi TelescopeSelectionCaret ctermbg=236 ctermfg=216 cterm=NONE guibg=#262626 guifg=#ffaf87 gui=NONE
+    hi TelescopeSelectionCaret ctermbg=236 ctermfg=216 cterm=NONE guibg=#262626 guifg=#CFA488 gui=NONE
     hi GitSignsAdd ctermbg=238 ctermfg=65 cterm=NONE guibg=#2e2e2e guifg=#8DB98D gui=NONE
-    hi GitSignsChange ctermbg=238 ctermfg=216 cterm=NONE guibg=#2e2e2e guifg=#ffaf87 gui=NONE
+    hi GitSignsChange ctermbg=238 ctermfg=216 cterm=NONE guibg=#2e2e2e guifg=#CFA488 gui=NONE
     hi GitSignsDelete ctermbg=238 ctermfg=131 cterm=NONE guibg=#2e2e2e guifg=#B37576 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
@@ -255,6 +255,7 @@ hi link @variable TSVariable
 hi link @lsp.type.namespace TSNamespace
 hi link @lsp.type.operator TSOperator
 hi link @lsp.type.variable TSVariable
+hi link @lsp.type.property TSProperty
 hi link Terminal Normal
 hi link Number Constant
 hi link CursorIM Cursor
@@ -316,7 +317,7 @@ let g:terminal_ansi_colors = [
         \ '#70AEB1',
         \ '#3d3d3d',
         \ '#2e2e2e',
-        \ '#ffaf87',
+        \ '#CFA488',
         \ '#9FCC9F',
         \ '#D3C899',
         \ '#CAE7FF',
