@@ -2,7 +2,7 @@
 " Author:      Michal Sarpt0 ()
 " Webpage:     https://github.com/sarpt/pale-fire-stealth-nvim
 " Description: Adaptation of pale-fire stealth variant in neovim based on the original pale-fire adaptation by Nequo
-" Last Change: 2025-10-18
+" Last Change: 2025-12-11
 
 hi clear
 if exists("syntax_on")
@@ -63,11 +63,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=underline guibg=NONE guifg=NONE gui=underline
     hi VertSplit ctermbg=NONE ctermfg=238 cterm=NONE guibg=NONE guifg=#2e2e2e gui=NONE
     hi WildMenu ctermbg=110 ctermfg=235 cterm=NONE guibg=#CAE7FF guifg=#232323 gui=NONE
-    hi Function ctermbg=NONE ctermfg=73 cterm=NONE guibg=NONE guifg=#89C7CB gui=NONE
+    hi Function ctermbg=NONE ctermfg=182 cterm=NONE guibg=NONE guifg=#c0b2de gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi Title ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi DiffAdd ctermbg=235 ctermfg=108 cterm=reverse guibg=#232323 guifg=#9FCC9F gui=reverse
-    hi DiffChange ctermbg=235 ctermfg=182 cterm=reverse guibg=#232323 guifg=#d7afd7 gui=reverse
+    hi DiffChange ctermbg=235 ctermfg=182 cterm=reverse guibg=#232323 guifg=#c0b2de gui=reverse
     hi DiffDelete ctermbg=235 ctermfg=131 cterm=reverse guibg=#232323 guifg=#B37576 gui=reverse
     hi DiffText ctermbg=235 ctermfg=103 cterm=reverse guibg=#232323 guifg=#DC8CC3 gui=reverse
     hi diffAdded ctermbg=NONE ctermfg=108 cterm=NONE guibg=NONE guifg=#9FCC9F gui=NONE
@@ -81,18 +81,17 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=65 cterm=undercurl guibg=NONE guifg=#8DB98D gui=undercurl guisp=#8DB98D
     hi SpellRare ctermbg=NONE ctermfg=216 cterm=undercurl guibg=NONE guifg=#CFA488 gui=undercurl guisp=#CFA488
     hi ColorColumn ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1E1E1E guifg=NONE gui=NONE
+    hi Operator ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
+    hi Delimiter ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
+    hi @variable ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi TSPunctBracket ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi TSField ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#CFA488 gui=NONE
     hi TSParameter ctermbg=NONE ctermfg=108 cterm=NONE guibg=NONE guifg=#9FCC9F gui=NONE
     hi TSNamespace ctermbg=NONE ctermfg=108 cterm=NONE guibg=NONE guifg=#B1DEB1 gui=NONE
     hi TSConstructor ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#70AEB1 gui=NONE
-    hi TSVariable ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi TSKeyword ctermbg=NONE ctermfg=229 cterm=bold guibg=NONE guifg=#D3C899 gui=bold
-    hi TSOperator ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi @lsp.type.enumMember ctermbg=NONE ctermfg=110 cterm=NONE guibg=NONE guifg=#AFCBE3 gui=NONE
-    hi rustFoldBraces ctermbg=NONE ctermfg=220 cterm=NONE guibg=NONE guifg=#FFD700 gui=NONE
-    hi rustOperator ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#E0E0C9 gui=NONE
     hi NvimTreeRootFolder ctermbg=NONE ctermfg=65 cterm=NONE guibg=NONE guifg=#8DB98D gui=NONE
     hi NvimTreeFolderName ctermbg=NONE ctermfg=67 cterm=NONE guibg=NONE guifg=#70AEB1 gui=NONE
     hi NvimTreeOpenedFolderName ctermbg=NONE ctermfg=216 cterm=NONE guibg=NONE guifg=#CFA488 gui=NONE
@@ -176,7 +175,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=underline
     hi VertSplit ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi WildMenu ctermbg=blue ctermfg=black cterm=NONE
-    hi Function ctermbg=NONE ctermfg=cyan cterm=NONE
+    hi Function ctermbg=NONE ctermfg=magenta cterm=NONE
     hi SpecialKey ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi Title ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi DiffAdd ctermbg=black ctermfg=green cterm=reverse
@@ -194,18 +193,17 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi SpellLocal ctermbg=NONE ctermfg=darkgreen cterm=undercurl
     hi SpellRare ctermbg=NONE ctermfg=red cterm=undercurl
     hi ColorColumn ctermbg=black ctermfg=NONE cterm=NONE
+    hi Operator ctermbg=NONE ctermfg=lightgrey cterm=NONE
+    hi Delimiter ctermbg=NONE ctermfg=lightgrey cterm=NONE
+    hi @variable ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi TSPunctBracket ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi TSPunctDelimiter ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi TSField ctermbg=NONE ctermfg=red cterm=NONE
     hi TSParameter ctermbg=NONE ctermfg=green cterm=NONE
     hi TSNamespace ctermbg=NONE ctermfg=green cterm=NONE
     hi TSConstructor ctermbg=NONE ctermfg=darkblue cterm=NONE
-    hi TSVariable ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi TSKeyword ctermbg=NONE ctermfg=yellow cterm=bold
-    hi TSOperator ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi @lsp.type.enumMember ctermbg=NONE ctermfg=blue cterm=NONE
-    hi rustFoldBraces ctermbg=NONE ctermfg=yellow cterm=NONE
-    hi rustOperator ctermbg=NONE ctermfg=lightgrey cterm=NONE
     hi NvimTreeRootFolder ctermbg=NONE ctermfg=darkgreen cterm=NONE
     hi NvimTreeFolderName ctermbg=NONE ctermfg=darkblue cterm=NONE
     hi NvimTreeOpenedFolderName ctermbg=NONE ctermfg=red cterm=NONE
@@ -247,15 +245,18 @@ hi link TSRepeat Keyword
 hi link TSProperty TSField
 hi link TSConstant Constant
 hi link TSTagDelimiter PreProc
+hi link TSVariable @variable
 hi link TSVariableBuiltin TSVariable
 hi link TSTag TSKeyword
+hi link TSOperator Operator
 hi link TSKeywordOperator TSKeyword
 hi link TSKeywordFunction TSKeyword
-hi link @variable TSVariable
 hi link @lsp.type.namespace TSNamespace
-hi link @lsp.type.operator TSOperator
-hi link @lsp.type.variable TSVariable
+hi link @lsp.type.operator Operator
+hi link @lsp.type.variable @variable
 hi link @lsp.type.property TSProperty
+hi link rustFoldBraces Delimiter
+hi link rustOperator Operator
 hi link Terminal Normal
 hi link Number Constant
 hi link CursorIM Cursor
@@ -264,7 +265,6 @@ hi link Character Constant
 hi link Conditional Statement
 hi link Debug Special
 hi link Define PreProc
-hi link Delimiter Special
 hi link Exception Statement
 hi link Float Number
 hi link HelpCommand Statement
@@ -273,7 +273,6 @@ hi link Include PreProc
 hi link Label Statement
 hi link Macro PreProc
 hi link Number Constant
-hi link Operator Statement
 hi link PreCondit PreProc
 hi link Repeat Statement
 hi link SpecialChar Special
@@ -321,7 +320,7 @@ let g:terminal_ansi_colors = [
         \ '#9FCC9F',
         \ '#D3C899',
         \ '#CAE7FF',
-        \ '#d7afd7',
+        \ '#c0b2de',
         \ '#89C7CB',
         \ '#ffffff',
         \ ]

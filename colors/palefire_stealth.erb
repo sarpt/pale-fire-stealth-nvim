@@ -72,7 +72,7 @@
     lighter_grey = ["#515151", 250, "lightgrey"]
     white        = ["#ffffff", 231, "white"]
     purple       = ["#DC8CC3", 103, "darkmagenta"]
-    light_purple = ["#d7afd7", 182, "magenta"]
+    light_purple = ["#c0b2de", 182, "magenta"]
     green        = ["#8DB98D", 65, "darkgreen"]
     light_green  = ["#9FCC9F", 108, "green"]
     pale_green   = ["#B1DEB1", 108, "green"]
@@ -178,7 +178,7 @@
         [ "VisualNOS", "NONE", "NONE", "underline" ],
         [ "VertSplit", "NONE", grey, "NONE" ],
         [ "WildMenu", light_blue, darker_grey, "NONE" ],
-        [ "Function", "NONE", light_aqua, "NONE" ],
+        [ "Function", "NONE", light_purple, "NONE" ],
         [ "SpecialKey", "NONE", medium_grey, "NONE" ],
         [ "Title", "NONE", pale_gold, "NONE" ],
         [ "DiffAdd", darker_grey, light_green, "reverse" ],
@@ -196,6 +196,10 @@
         [ "SpellLocal", "NONE", green, "undercurl", green ],
         [ "SpellRare", "NONE", orange, "undercurl", orange ],
         [ "ColorColumn", almost_black, "NONE", "NONE" ],
+        [ "Operator", "NONE", pale_gold, "NONE" ],
+        [ "Delimiter", "NONE", pale_gold, "NONE" ],
+          ##
+        [ "@variable", "NONE", pale_gold, "NONE" ],
           ###
         [ "TSInclude", "PreProc"],
         [ "TSPunctBracket", "NONE", pale_gold, "NONE"],
@@ -213,24 +217,22 @@
         [ "TSParameter", "NONE", light_green, "NONE"],
         [ "TSNamespace", "NONE", pale_green, "NONE"],
         [ "TSConstructor", "NONE", blue, "NONE"],
-        [ "TSVariable", "NONE", pale_gold, "NONE"],
+        [ "TSVariable", "@variable"],
         [ "TSVariableBuiltin", "TSVariable"],
         [ "TSKeyword", "NONE", yellow, "bold"],
         [ "TSTag", "TSKeyword"],
-        [ "TSOperator", "NONE", pale_gold, "NONE" ],
+        [ "TSOperator", "Operator" ],
         [ "TSKeywordOperator",  "TSKeyword" ],
         [ "TSKeywordFunction",  "TSKeyword" ],
-          ##
-        [ "@variable", "TSVariable" ],
           ###
         [ "@lsp.type.enumMember", "NONE", pale_blue, "NONE" ],
         [ "@lsp.type.namespace", "TSNamespace"],
-        [ "@lsp.type.operator", "TSOperator" ],
-        [ "@lsp.type.variable", "TSVariable" ],
+        [ "@lsp.type.operator", "Operator" ],
+        [ "@lsp.type.variable", "@variable" ],
         [ "@lsp.type.property", "TSProperty" ],
           ###
-        [ "rustFoldBraces", "NONE", hiviz_yellow, "NONE" ],
-        [ "rustOperator", "NONE", pale_gold, "NONE" ],
+        [ "rustFoldBraces", "Delimiter" ],
+        [ "rustOperator", "Operator" ],
           ###
         [ "NvimTreeRootFolder", "NONE", green, "NONE" ],
         [ "NvimTreeFolderName", "NONE", blue, "NONE" ],
@@ -274,7 +276,6 @@
         [ "Conditional", "Statement" ],
         [ "Debug", "Special" ],
         [ "Define", "PreProc" ],
-        [ "Delimiter", "Special" ],
         [ "Exception", "Statement" ],
         [ "Float", "Number" ],
         [ "HelpCommand", "Statement" ],
@@ -283,7 +284,6 @@
         [ "Label", "Statement" ],
         [ "Macro", "PreProc" ],
         [ "Number", "Constant" ],
-        [ "Operator", "Statement" ],
         [ "PreCondit", "PreProc" ],
         [ "Repeat", "Statement" ],
         [ "SpecialChar", "Special" ],
